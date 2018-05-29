@@ -30,7 +30,7 @@ connectors:
 
     userSearch:
       baseDN: OU=User Accounts,DC=freewheelmedia,DC=net
-      filter: "(sAMAccountName={0})"
+#      filter: "(sAMAccountName={0})"
       username: mail
       # "DN" (case sensitive) is a special attribute name. It indicates that
       # this value should be taken from the entity's DN not an attribute on
@@ -41,7 +41,7 @@ connectors:
 
     groupSearch:
       baseDN: ou=Groups,DC=freewheelmedia,DC=net
-      filter: "(objectClass=groupOfNames)"
+#      filter: "(objectClass=groupOfNames)"
 
       # A user is a member of a group when their DN matches
       # the value of a "member" attribute on the group entity.
